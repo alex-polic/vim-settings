@@ -43,3 +43,7 @@ noremap <leader>v "+p
 noremap <leader>d :t.<enter>
 " Select all
 noremap <leader>a ggVG
+
+" Same Tab behaviour in IDE
+vmap <Tab> >gv
+vmap <S-Tab> <gv
