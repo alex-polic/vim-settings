@@ -15,13 +15,15 @@ set incsearch
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
+" keep mode for refactor rename command
+set idearefactormode=keep
+
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
 " Highlight copied text
 Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
-
 
 " set <leader> to <space>
 let mapleader = " "
@@ -35,6 +37,8 @@ let mapleader = " "
 
 "" Map \b to toggle the breakpoint on the current line
 map <leader>b <Action>(ToggleLineBreakpoint)
+" Rename element
+map <Leader>r :action RenameElement<CR>
 " Clipboard copy
 noremap <leader>c "+y
 " Clipboard paste
